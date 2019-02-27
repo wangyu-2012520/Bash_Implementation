@@ -12,7 +12,7 @@ IGNORE=`echo $string | grep "Skipped: [0-9]*." -o | sed 's/[^0-9]*//g'`
 ```
 
 ## example
-here is the example for loop all docker-compose files, each docker-compose file contains a set of test scenarios;
+here is the example for loop all docker-compose files, each docker-compose file contains a set of test scenarios; By doing this, we are able to put bash file (test scenarios only for functional test)as part of CI (or known as CI with test).
 
 ```
 yourfilenames='./*.yml'  
